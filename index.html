@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nicolas GCK | Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Botão de alternância de tema -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Navegação -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Nicolas<span>GCK</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Olá, sou <span class="highlight">Nicolas GCK</span></h1>
+      <p class="subtitle">Desenvolvedor Full Stack | Criando soluções digitais inovadoras</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Meus Projetos</a>
+        <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/nicolas-gck/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/nicolas-gck" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:seuemail@exemplo.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="profile-placeholder">
+        <i class="fas fa-user"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Sou um desenvolvedor apaixonado por tecnologia e inovação. 
+            Com experiência em desenvolvimento web, foco em criar aplicações 
+            escaláveis, performáticas e com excelente experiência do usuário.
+          </p>
+          <p>
+            Estou sempre em busca de novos desafios e oportunidades para 
+            aprender e contribuir com projetos impactantes.
+          </p>
+          <a href="#" class="btn btn-outline" download>Download CV <i class="fas fa-download"></i></a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>3+</h3>
+            <p>Anos de Experiência</p>
+          </div>
+          <div class="stat-card">
+            <h3>20+</h3>
+            <p>Projetos Concluídos</p>
+          </div>
+          <div class="stat-card">
+            <h3>10+</h3>
+            <p>Tecnologias Dominadas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiência -->
+  <section id="experience" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Experiência Profissional</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Desenvolvedor Full Stack</h3>
+            <span class="company">Empresa XYZ • 2023 - Presente</span>
+            <p>Desenvolvimento de aplicações web com React, Node.js e TypeScript. 
+               Liderança técnica em projetos ágeis e integração com APIs REST/GraphQL.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Desenvolvedor Front-end</h3>
+            <span class="company">Startup ABC • 2021 - 2023</span>
+            <p>Criação de interfaces responsivas com HTML, CSS, JavaScript e frameworks modernos. 
+               Otimização de performance e acessibilidade.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Estagiário em TI</h3>
+            <span class="company">Empresa Tech • 2020 - 2021</span>
+            <p>Suporte ao desenvolvimento, manutenção de sistemas e aprendizado em boas práticas de programação.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Front-end</h3>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>React</span><span>Vue.js</span><span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Back-end</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Python</span><span>Express</span>
+            <span>PostgreSQL</span><span>MongoDB</span><span>REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>Docker</span><span>AWS</span>
+            <span>Figma</span><span>Linux</span><span>CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Projetos em Destaque</h2>
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
+        <article class="project-card">
+          <div class="project-image">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="project-info">
+            <h3>Plataforma E-commerce</h3>
+            <p>Aplicação full stack com carrinho, pagamentos e painel administrativo.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i> Código</a>
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="project-card">
+          <div class="project-image">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="project-info">
+            <h3>App de Gestão de Tarefas</h3>
+            <p>Aplicativo responsivo com autenticação, notificações e sincronização em tempo real.</p>
+            <div class="project-tech">
+              <span>Vue.js</span><span>Firebase</span><span>Vuetify</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i> Código</a>
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="project-card">
+          <div class="project-image">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-info">
+            <h3>Dashboard Analítico</h3>
+            <p>Painel interativo com visualização de dados e relatórios dinâmicos.</p>
+            <div class="project-tech">
+              <span>React</span><span>D3.js</span><span>Express</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i> Código</a>
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Vamos Conversar?</h2>
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>seuemail@exemplo.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Sua Cidade, Estado</p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/nicolas-gck/" target="_blank">linkedin.com/in/nicolas-gck</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Nicolas GCK. Todos os direitos reservados.</p>
+    <div class="footer-social">
+      <a href="https://linkedin.com/in/nicolas-gck/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/nicolas-gck" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:seuemail@exemplo.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
