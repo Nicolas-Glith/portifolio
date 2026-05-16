@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfólio profissional de Nicolas GCK - Desenvolvedor Full Stack especializado em soluções web inovadoras."/>
+  <title>Nicolas GCK | Portfólio Profissional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader"></div>
+    <p>Carregando portfólio...</p>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Botão de alternância de tema -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+    <i class="fas fa-moon"></i>
+    <span class="tooltip">Alternar tema</span>
+  </button>
+
+  <!-- Navegação -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Nicolas<span>GCK</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Início</a></li>
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#experience" class="nav-link">Experiência</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">👋 Disponível para novos projetos</span>
+      <h1>Olá, sou <span class="highlight">Nicolas GCK</span></h1>
+      <p class="subtitle"><span id="typewriter"></span><span class="cursor">|</span></p>
+      <p class="hero-description">
+        Transformo ideias em experiências digitais excepcionais. 
+        Especialista em desenvolvimento full stack com foco em performance, 
+        escalabilidade e experiência do usuário.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-folder-open"></i> Meus Projetos
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-paper-plane"></i> Entre em Contato
+        </a>
+        <a href="#" class="btn btn-outline" id="downloadCV" download>
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/nicolas-gck/" target="_blank" aria-label="LinkedIn" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/nicolas-gck" target="_blank" aria-label="GitHub" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:contato@nicolasgck.dev" aria-label="Email" class="social-link" id="copyEmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="#" aria-label="WhatsApp" class="social-link">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="profile-wrapper">
+        <div class="profile-placeholder" aria-label="Foto de perfil">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span class="status-text">Online</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">01</span>
+        Sobre Mim
+      </h2>
+      <div class="about-content">
+        <div class="about-text fade-in">
+          <p>
+            Sou um <strong>desenvolvedor Full Stack</strong> apaixonado por criar 
+            soluções tecnológicas que impactam positivamente a vida das pessoas. 
+            Com mais de 3 anos de experiência no mercado, atuo desde startups 
+            até grandes empresas.
+          </p>
+          <p>
+            Minha abordagem combina <strong>boas práticas de código</strong>, 
+            <strong>design centrado no usuário</strong> e <strong>metodologias ágeis</strong> 
+            para entregar produtos de alta qualidade dentro dos prazos.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Código limpo e testável</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Comunicação clara e objetiva</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Entrega dentro do prazo</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Suporte pós-entrega</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline" id="downloadCV2" download>
+            <i class="fas fa-file-pdf"></i> Baixar CV em PDF
+          </a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card fade-in" style="transition-delay: 0.1s">
+            <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+            <h3 class="stat-number" data-target="3">0</h3>
+            <p class="stat-label">Anos de Experiência</p>
+          </div>
+          <div class="stat-card fade-in" style="transition-delay: 0.2s">
+            <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+            <h3 class="stat-number" data-target="25">0</h3>
+            <p class="stat-label">Projetos Entregues</p>
+          </div>
+          <div class="stat-card fade-in" style="transition-delay: 0.3s">
+            <div class="stat-icon"><i class="fas fa-code"></i></div>
+            <h3 class="stat-number" data-target="15">0</h3>
+            <p class="stat-label">Tecnologias</p>
+          </div>
+          <div class="stat-card fade-in" style="transition-delay: 0.4s">
+            <div class="stat-icon"><i class="fas fa-smile"></i></div>
+            <h3 class="stat-number" data-target="100">0</h3>
+            <p class="stat-label">% Satisfação</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiência -->
+  <section id="experience" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">02</span>
+        Experiência Profissional
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 - Presente</span>
+            <h3>Desenvolvedor Full Stack Senior</h3>
+            <span class="company"><i class="fas fa-building"></i> TechCorp Solutions</span>
+            <p>Liderança técnica em projetos enterprise com React, Node.js e AWS. 
+               Implementação de arquitetura microservices, CI/CD e mentoring de desenvolvedores júnior.</p>
+            <div class="timeline-tags">
+              <span>React</span><span>Node.js</span><span>AWS</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021 - 2023</span>
+            <h3>Desenvolvedor Front-end</h3>
+            <span class="company"><i class="fas fa-building"></i> StartupInnova</span>
+            <p>Desenvolvimento de interfaces responsivas e acessíveis. 
+               Otimização de performance (Core Web Vitals) e implementação de design systems.</p>
+            <div class="timeline-tags">
+              <span>Vue.js</span><span>TypeScript</span><span>Tailwind</span><span>Figma</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2020 - 2021</span>
+            <h3>Estagiário em Desenvolvimento</h3>
+            <span class="company"><i class="fas fa-building"></i> Digital Labs</span>
+            <p>Primeiros passos no desenvolvimento web. Manutenção de sistemas legados, 
+               criação de landing pages e aprendizado em boas práticas de programação.</p>
+            <div class="timeline-tags">
+              <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">03</span>
+        Habilidades Técnicas
+      </h2>
+      
+      <!-- Tabs de categorias -->
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="frontend">
+          <i class="fas fa-laptop-code"></i> Front-end
+        </button>
+        <button class="tab-btn" data-tab="backend">
+          <i class="fas fa-server"></i> Back-end
+        </button>
+        <button class="tab-btn" data-tab="tools">
+          <i class="fas fa-tools"></i> Ferramentas
+        </button>
+        <button class="tab-btn" data-tab="soft">
+          <i class="fas fa-brain"></i> Soft Skills
+        </button>
+      </div>
+
+      <!-- Conteúdo das tabs -->
+      <div class="skills-content">
+        <!-- Front-end -->
+        <div class="skill-tab active" id="frontend">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">React / Next.js</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Vue.js / Nuxt</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Tailwind CSS / SASS</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="92"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back-end -->
+        <div class="skill-tab" id="backend">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Node.js / Express</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python / Django</span>
+                <span class="skill-level">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">PostgreSQL / MongoDB</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="88"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">REST / GraphQL APIs</span>
+                <span class="skill-level">93%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="93"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ferramentas -->
+        <div class="skill-tab" id="tools">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Git / GitHub / GitLab</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Docker / Kubernetes</span>
+                <span class="skill-level">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">AWS / Vercel / Netlify</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Jest / Cypress / Testing</span>
+                <span class="skill-level">82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="82"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-tab" id="soft">
+          <div class="skills-soft-grid">
+            <div class="soft-skill fade-in">
+              <i class="fas fa-comments"></i>
+              <h4>Comunicação</h4>
+              <p>Clara, objetiva e adaptada para técnicos e não-técnicos</p>
+            </div>
+            <div class="soft-skill fade-in">
+              <i class="fas fa-users"></i>
+              <h4>Trabalho em Equipe</h4>
+              <p>Colaboração em squads ágeis com foco em resultados</p>
+            </div>
+            <div class="soft-skill fade-in">
+              <i class="fas fa-lightbulb"></i>
+              <h4>Resolução de Problemas</h4>
+              <p>Pensamento analítico para soluções criativas e eficientes</p>
+            </div>
+            <div class="soft-skill fade-in">
+              <i class="fas fa-clock"></i>
+              <h4>Gestão de Tempo</h4>
+              <p>Priorização eficiente e entrega dentro dos prazos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos com Filtro -->
+  <section id="projects" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">04</span>
+        Projetos em Destaque
+      </h2>
+      
+      <!-- Filtros -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-th-large"></i> Todos
+        </button>
+        <button class="filter-btn" data-filter="react">
+          <i class="fab fa-react"></i> React
+        </button>
+        <button class="filter-btn" data-filter="vue">
+          <i class="fab fa-vuejs"></i> Vue.js
+        </button>
+        <button class="filter-btn" data-filter="node">
+          <i class="fab fa-node"></i> Node.js
+        </button>
+        <button class="filter-btn" data-filter="python">
+          <i class="fab fa-python"></i> Python
+        </button>
+        <button class="filter-btn" data-filter="mobile">
+          <i class="fas fa-mobile-alt"></i> Mobile
+        </button>
+      </div>
+
+      <!-- Grid de Projetos -->
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
+        <article class="project-card fade-in" data-tech="react node">
+          <div class="project-image">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="project-overlay">
+              <button class="btn-view" data-project="1">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag react">React</span>
+              <span class="tag node">Node.js</span>
+              <span class="tag mongo">MongoDB</span>
+            </div>
+            <h3>E-commerce Platform</h3>
+            <p>Plataforma completa de vendas com carrinho, pagamentos, 
+               painel administrativo e integração com APIs de frete.</p>
+            <div class="project-stats">
+              <span><i class="fas fa-star"></i> 4.9/5</span>
+              <span><i class="fas fa-code-branch"></i> 12 commits</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="link-github" aria-label="Código no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" target="_blank" class="link-demo" aria-label="Ver Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <button class="link-details" data-project="1" aria-label="Ver detalhes">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="project-card fade-in" data-tech="vue python">
+          <div class="project-image">
+            <i class="fas fa-tasks"></i>
+            <div class="project-overlay">
+              <button class="btn-view" data-project="2">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag vue">Vue.js</span>
+              <span class="tag python">Python</span>
+              <span class="tag firebase">Firebase</span>
+            </div>
+            <h3>TaskFlow - Gestão de Tarefas</h3>
+            <p>Aplicativo colaborativo com drag-and-drop, notificações em tempo real, 
+               relatórios e sincronização multi-dispositivo.</p>
+            <div class="project-stats">
+              <span><i class="fas fa-star"></i> 4.8/5</span>
+              <span><i class="fas fa-users"></i> 500+ usuários</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="link-github" aria-label="Código no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" target="_blank" class="link-demo" aria-label="Ver Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <button class="link-details" data-project="2" aria-label="Ver detalhes">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="project-card fade-in" data-tech="react node">
+          <div class="project-image">
+            <i class="fas fa-chart-pie"></i>
+            <div class="project-overlay">
+              <button class="btn-view" data-project="3">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag react">Next.js</span>
+              <span class="tag node">Express</span>
+              <span class="tag d3">D3.js</span>
+            </div>
+            <h3>Analytics Dashboard</h3>
+            <p>Painel interativo com visualização de dados em tempo real, 
+               filtros dinâmicos, exportação de relatórios e alertas personalizados.</p>
+            <div class="project-stats">
+              <span><i class="fas fa-star"></i> 5.0/5</span>
+              <span><i class="fas fa-bolt"></i> 99.9% uptime</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="link-github" aria-label="Código no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" target="_blank" class="link-demo" aria-label="Ver Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <button class="link-details" data-project="3" aria-label="Ver detalhes">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 4 -->
+        <article class="project-card fade-in" data-tech="mobile react">
+          <div class="project-image">
+            <i class="fas fa-heartbeat"></i>
+            <div class="project-overlay">
+              <button class="btn-view" data-project="4">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag react">React Native</span>
+              <span class="tag firebase">Firebase</span>
+              <span class="tag mobile">Mobile</span>
+            </div>
+            <h3>HealthTrack - App de Saúde</h3>
+            <p>Aplicativo mobile para monitoramento de atividades físicas, 
+               nutrição, sono e integração com wearables.</p>
+            <div class="project-stats">
+              <span><i class="fas fa-star"></i> 4.7/5</span>
+              <span><i class="fas fa-download"></i> 10k+ downloads</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="link-github" aria-label="Código no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" target="_blank" class="link-demo" aria-label="Ver na App Store">
+                <i class="fab fa-app-store"></i>
+              </a>
+              <button class="link-details" data-project="4" aria-label="Ver detalhes">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 5 -->
+        <article class="project-card fade-in" data-tech="python node">
+          <div class="project-image">
+            <i class="fas fa-robot"></i>
+            <div class="project-overlay">
+              <button class="btn-view" data-project="5">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag python">Python</span>
+              <span class="tag ml">TensorFlow</span>
+              <span class="tag node">FastAPI</span>
+            </div>
+            <h3>AI Chatbot Assistant</h3>
+            <p>Assistente virtual com processamento de linguagem natural, 
+               aprendizado contínuo e integração com múltiplos canais de atendimento.</p>
+            <div class="project-stats">
+              <span><i class="fas fa-star"></i> 4.9/5</span>
+              <span><i class="fas fa-comments"></i> 50k+ conversas</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="link-github" aria-label="Código no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" target="_blank" class="link-demo" aria-label="Testar Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <button class="link-details" data-project="5" aria-label="Ver detalhes">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 6 -->
+        <article class="project-card fade-in" data-tech="vue node">
+          <div class="project-image">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="project-overlay">
+              <button class="btn-view" data-project="6">
+                <i class="fas fa-eye"></i> Ver Detalhes
+              </button>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag vue">Nuxt.js</span>
+              <span class="tag node">Strapi</span>
+              <span class="tag aws">AWS</span>
+            </div>
+            <h3>EduPlatform - LMS</h3>
+            <p>Plataforma de ensino online com vídeos, quizzes, certificados, 
+               gamificação e acompanhamento de progresso dos alunos.</p>
+            <div class="project-stats">
+              <span><i class="fas fa-star"></i> 4.8/5</span>
+              <span><i class="fas fa-user-graduate"></i> 2k+ alunos</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" class="link-github" aria-label="Código no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" target="_blank" class="link-demo" aria-label="Ver Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+              <button class="link-details" data-project="6" aria-label="Ver detalhes">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de Projeto -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-body" id="modalBody">
+        <!-- Conteúdo dinâmico carregado via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Depoimentos -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">05</span>
+        Depoimentos
+      </h2>
+      <div class="testimonials-wrapper">
+        <button class="testimonial-nav prev" id="testimonialPrev" aria-label="Anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="testimonials-carousel" id="testimonialsCarousel">
+          <div class="testimonial-slide active">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div>
+                  <h4>Mariana Silva</h4>
+                  <span class="role">Product Manager @ TechCorp</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "O Nicolas entregou nosso projeto principal antes do prazo e com 
+                qualidade excepcional. Sua comunicação clara e proatividade foram 
+                fundamentais para o sucesso da iniciativa."
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div>
+                  <h4>Rafael Costa</h4>
+                  <span class="role">CTO @ StartupInnova</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="testimonial-text">
+                "Profissional extremamente competente. O Nicolas não só domina 
+                as tecnologias, mas também entende de negócio. Recomendo fortemente!"
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="avatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div>
+                  <h4>Juliana Mendes</h4>
+                  <span class="role">UX Designer @ Digital Labs</span>
+                </div>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Trabalhar com o Nicolas foi uma experiência incrível. Ele valoriza 
+                o design, implementa com precisão e sempre sugere melhorias técnicas 
+                que elevam o produto final."
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <button class="testimonial-nav next" id="testimonialNext" aria-label="Próximo">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <!-- Indicadores do carousel -->
+      <div class="testimonial-dots" id="testimonialDots">
+        <button class="dot active" data-slide="0" aria-label="Ir para depoimento 1"></button>
+        <button class="dot" data-slide="1" aria-label="Ir para depoimento 2"></button>
+        <button class="dot" data-slide="2" aria-label="Ir para depoimento 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">06</span>
+        Vamos Trabalhar Juntos?
+      </h2>
+      <div class="contact-wrapper">
+        <div class="contact-info fade-in">
+          <h3>Informações de Contato</h3>
+          <p>Estou sempre aberto a novos desafios e oportunidades de colaboração. 
+             Entre em contato e vamos conversar sobre seu próximo projeto!</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <label>Email</label>
+                <p id="contactEmail">contato@nicolasgck.dev</p>
+                <button class="copy-btn" id="copyEmailBtn" data-copy="contato@nicolasgck.dev">
+                  <i class="fas fa-copy"></i> Copiar
+                </button>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div>
+                <label>WhatsApp</label>
+                <p>+55 (11) 99999-9999</p>
+                <a href="https://wa.me/5511999999999" target="_blank" class="contact-link">
+                  <i class="fas fa-external-link-alt"></i> Enviar mensagem
+                </a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <label>Localização</label>
+                <p>São Paulo, SP - Brasil</p>
+                <span class="timezone">🕐 UTC-3 (Brasília)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-contacts">
+            <a href="https://linkedin.com/in/nicolas-gck/" target="_blank" class="social-btn linkedin">
+              <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
+            <a href="https://github.com/nicolas-gck" target="_blank" class="social-btn github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" class="social-btn behance">
+              <i class="fab fa-behance"></i> Behance
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome Completo *</label>
+              <input type="text" id="name" name="name" required 
+                     pattern=".{2,}" title="Mínimo 2 caracteres"
+                     placeholder="Seu nome"/>
+              <span class="error-msg">Por favor, insira seu nome</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Profissional *</label>
+              <input type="email" id="email" name="email" required 
+                     placeholder="seu@email.com"/>
+              <span class="error-msg">Insira um email válido</span>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Assunto *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Selecione um assunto</option>
+              <option value="projeto">Novo Projeto</option>
+              <option value="parceria">Parceria</option>
+              <option value="consultoria">Consultoria</option>
+              <option value="vaga">Oportunidade de Trabalho</option>
+              <option value="outro">Outro</option>
+            </select>
+            <span class="error-msg">Selecione um assunto</span>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensagem *</label>
+            <textarea id="message" name="message" rows="5" required 
+                      placeholder="Descreva brevemente sua solicitação..."
+                      minlength="20"></textarea>
+            <span class="error-msg">Mensagem muito curta (mín. 20 caracteres)</span>
+            <div class="char-counter"><span id="charCount">0</span>/500</div>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="consent" name="consent" required />
+              <span class="checkmark"></span>
+              Concordo em receber comunicações e autorizo o tratamento dos meus dados conforme a <a href="#" target="_blank">Política de Privacidade</a>.
+            </label>
+            <span class="error-msg">É necessário aceitar para enviar</span>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+            <span class="btn-text">Enviar Mensagem</span>
+            <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i> Enviando...</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">Nicolas<span>GCK</span></a>
+        <p>Desenvolvedor Full Stack criando experiências digitais excepcionais.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Recursos</h4>
+        <ul>
+          <li><a href="#" id="downloadCV3" download>Download CV</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Termos</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-social">
+        <h4>Conecte-se</h4>
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/nicolas-gck/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/nicolas-gck" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:contato@nicolasgck.dev" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" aria-label="RSS Feed">
+            <i class="fas fa-rss"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Nicolas GCK. Todos os direitos reservados.</p>
+      <p class="footer-credit">Feito com <i class="fas fa-heart"></i> e muito café ☕</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notifications -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  
+  <!-- Schema.org para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nicolas GCK",
+    "jobTitle": "Desenvolvedor Full Stack",
+    "url": "https://nicolasgck.dev",
+    "sameAs": [
+      "https://linkedin.com/in/nicolas-gck/",
+      "https://github.com/nicolas-gck"
+    ]
+  }
+  </script>
+</body>
+</html>
